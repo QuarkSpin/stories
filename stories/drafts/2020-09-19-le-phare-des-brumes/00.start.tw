@@ -1,0 +1,51 @@
+:: StoryData
+{
+    "ifid": "340AAAAD-01EE-4F01-9CC6-E4BFFDE5D654"
+}
+
+:: StoryTitle
+Le Phare des Brumes
+
+:: Start
+Bienvenue dans cette aventure !
+
+Nous sommes en 1987 et vous êtes un(e) enquêteur/enquêtrice du //Bureau des Affaires Spéciales// de Paris travaillant sur des phénomènes qualifiés "d'étrange".
+
+//Cliquez sur le portrait du personnage que vous voulez incarner.//
+
+<div class="character-card">
+<<link [img[$player1.image][Prologue]]>><<set $player = $player1>><</link>>
+''$player1.fullName''
+$player1.nationality, $player1.age ans
+* $player1.attributes.int.name : ''$player1.attributes.int.value''
+* $player1.attributes.phy.name : ''$player1.attributes.phy.value''
+* $player1.attributes.psy.name : ''$player1.attributes.psy.value''
+* $player1.attributes.hab.name : ''$player1.attributes.hab.value''
+</div>\
+<div class="character-card">
+<<link [img[$player2.image][Prologue]]>><<set $player = $player2>><</link>>
+''$player2.fullName''
+$player2.nationality, $player2.age ans
+* $player2.attributes.int.name : ''$player2.attributes.int.value''
+* $player2.attributes.phy.name : ''$player2.attributes.phy.value''
+* $player2.attributes.psy.name : ''$player2.attributes.psy.value''
+* $player2.attributes.hab.name : ''$player2.attributes.hab.value''
+</div>\
+<div class="character-card">
+<<link [img[$player3.image][Prologue]]>><<set $player = $player3>><</link>>
+''$player3.fullName''
+$player3.nationality, $player3.age ans
+* $player3.attributes.int.name : ''$player3.attributes.int.value''
+* $player3.attributes.phy.name : ''$player3.attributes.phy.value''
+* $player3.attributes.psy.name : ''$player3.attributes.psy.value''
+* $player3.attributes.hab.name : ''$player3.attributes.hab.value''
+</div>\
+<div class="character-card">
+<<link [img[$player4.image][Prologue]]>><<set $player = $player4>><</link>>
+''$player4.fullName''
+$player4.nationality, $player4.age ans
+* $player4.attributes.int.name : ''$player4.attributes.int.value''
+* $player4.attributes.phy.name : ''$player4.attributes.phy.value''
+* $player4.attributes.psy.name : ''$player4.attributes.psy.value''
+* $player4.attributes.hab.name : ''$player4.attributes.hab.value''
+</div>

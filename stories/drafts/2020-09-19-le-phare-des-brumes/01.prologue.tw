@@ -1,0 +1,37 @@
+:: Prologue
+<<script>>
+if(State.variables.player.gender === 'm') {
+    for (const key in State.variables.ag) {
+        State.variables.ag[key] = key;
+    }
+    State.variables.e = ''
+}
+<</script>>
+<<set $started = true>>
+
+//Paris, 3 février 1987//
+
+Légèrement essoufflé$e, vous arrivez devant le pavillon Cambon Capucines, près de la place Vendôme. Quelques gouttes de pluie tombent du ciel gris. Vous grimpez les marches et passez les portes. Vous traversez le grand hall et jetez un bref coup d'oeil à votre montre sans vous arrêter. Il est 20h15.
+
+//Zut ! En retard.//
+
+Vous vous dirigez vers le réceptioniste.
+
+— Bonjour $ag.Monsieur $player.lastName, vous dit-il en vous reconnaissant. La réception à lieu au salon Mewès, sur votre droite.
+
+Vous le remerciez d'un bref signe de tête.
+
+Vous vous apprêtez à rejoindre vos collègues et, malheureusement, tout le gratin du //Bureau//.
+
+<<link "Vous vérifier une dernière fois votre $ag.costume" "Prologue - Vérifier tenue">><</link>>
+[[Vous entrez directement dans la salle|Prologue - Entree salle]]
+
+:: Prologue - Vérifier tenue
+
+Votre $ag.costume est impeccable... Enfin, peut-être un peut grand$e pour vous... Mais qu'importe. D'ici quelques heures vous en aurez fini et pourrez rentrez chez vous.
+
+[[Vous entrez dans la salle|Prologue - Entree salle]]
+
+:: Prologue - Entree salle
+
+TODO : Entrée dans la salle

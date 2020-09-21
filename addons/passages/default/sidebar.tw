@@ -1,0 +1,13 @@
+:: StoryCaption
+
+<<if $started>>
+----
+[img[$player.image]]
+''$player.fullName''
+$player.nationality, $player.age ans
+* $player.attributes.int.name : ''$player.attributes.int.value''
+* $player.attributes.phy.name : ''$player.attributes.phy.value''
+* $player.attributes.psy.name : ''$player.attributes.psy.value''
+* $player.attributes.hab.name : ''$player.attributes.hab.value''
+----
+<</if>>

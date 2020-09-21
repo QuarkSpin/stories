@@ -1,0 +1,26 @@
+a {
+    color: aqua;
+}
+
+#story-caption li {
+    text-align: left !important;
+}
+
+.character-card {
+    display: inline-block;
+    margin: 10px;
+}
+
+.character-card img {
+    width: 150px;
+}
+
+#story-caption img {
+    width: 90%;
+}
+
+#story-author {
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 5px;
+}
