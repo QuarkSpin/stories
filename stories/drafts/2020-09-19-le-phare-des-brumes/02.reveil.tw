@@ -1,0 +1,98 @@
+:: Réveil
+<<set $player.money = 0>>
+<<set $player.life = 5>>
+
+Tout n'est qu'obscurité...
+Obscurité et douleur...
+
+[[Vous rassemblez vos esprits|Réveil - Conscience]]
+[[Vous vous laissez sombrer|Réveil - Sombrer]]
+
+:: Réveil - Sombrer
+
+Vous lâchez prise et laissez votre esprit embrasser l'obscurité primordiale.
+Vous vous endormez... définitivement.
+
+<<end>>
+
+:: Réveil - Conscience
+
+Vous vous concentrez et essayer de reprendre le contrôle de votre corps, de vos sens, de votre esprit...
+
+//Il n'y a que le néant//, murmure une voix, //rien que le néant//.
+
+[["\"Qui êtes-vous ?\""|Réveil - Voix]]
+[[Vous ignorez la voix et vous concentrez d'avantage|Réveil - Conscience 2]]
+
+:: Réveil - Voix
+
+//Rien... Rien... Rien...// continue la voix.
+
+La douleur se fait plus vive. Vous avez du mal à vous concentrer.
+
+//Que le silence infini... Que l'informe obscur...//
+
+La voix continue à se faire entendre, lente et grâve. Distante, mais attirante... Tellement reposante.
+
+//La torpeur... Le sommeil... Le néant...//
+
+[[Vous vous laissez sombrer|Réveil - Sombrer]]
+[[Vous ouvrez les yeux|Réveil - Yeux ouverts]]
+
+:: Réveil - Conscience 2
+
+La voix continue à se faire entendre, lente et grâve. De plus en plus distante...
+
+//La torpeur... Le sommeil... Le néant...//
+
+Vous vous concentrez sur vos sens. La douleur se fait plus vive. Vous persistez et, petit à petit, reprenez contrôle de votre corps.
+
+[[Vous ouvrez les yeux|Réveil - Yeux ouverts]]
+
+:: Réveil - Yeux ouverts
+
+Vous ouvrez les yeux. Soudainement une forte lumière vous aveugle.
+Vous vous protégez des rayons du soleil avec votre main.
+Bizarement il brille juste en face de vous... Vous êtes couché$e sur le dos.
+
+[[Vous vous levez|Réveil - Debout]]
+[[Vous écoutez autour de vous|Réveil - Écouter]]
+
+:: Réveil - Écouter
+
+Vous restez alongé$e sur le dos. En-dessous de vous le sol est dur et inégal.
+Votre tête est encore douloureuse et votre esprit confus.
+
+Vous vous concentrez de nouveau. Peu à peu le bourdonnement qui agressait vos oreilles fait place au bruit du vent, de la mer et des vagues s'écrasant sur la côte.
+
+[[Vous vous levez|Réveil - Debout]]
+
+:: Réveil - Debout
+
+Vous vous relevez péniblement. Tous vos muscles vous brûlent. Un bref coup d'oeil à vos mains vous révèle des ecchymose et des traces de sang séché.
+Vous attendez quelques instant que le vertige se dissipe puis regardez enfin autour de vous.
+
+Vous êtes au sommet d'une petite falaise rocheuse. Devant vous et à perte de vue s'étand une eau agitée et sombre. Derrière vous s'élève un vieux phare en pierre dont les rayures de peinture blanches et rouges sont à peine visibles — estompées par le temps, visiblement.
+
+[img[images/lighthouse.jpg]]
+
+//Qu'est-ce que je fais ici ?// vous demandez-vous.
+
+[[Vous vous examinez|Réveil - Examen]]
+[[Vous sautez dans l'eau et tentez de fuire à la nage|Réveil - Fuite]]
+
+:: Réveil - Fuite
+
+Vous sautez du haut de la falaise et vous écrasez sur les rochez.
+Vous êtes mort$e.
+
+<<end>>
+
+:: Réveil - Examen
+
+//Allez $player.firstName//, pensez-vous. //Tu dois garder ton sang froid et analyser la situation.//
+
+TODO
+
+[[Vous faites le tour du phare|Réveil - Tour du phare]]
+[[Vous faites le tour du phare|Vous e]]

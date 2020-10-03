@@ -1,4 +1,19 @@
 {
     "twee3LanguageTools.storyformat.current": "",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "background": "magenta",
+            "foreground": "black",
+            "fontWeight": "bold",
+            "icon": "flame",
+            "iconColour": "magenta"
+        },
+        "BUG": {
+            "icon": "bug"
+        },
+        "FIXME": {
+            "icon": "flame"
+        }
+    }
 }

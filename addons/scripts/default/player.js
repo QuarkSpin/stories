@@ -55,13 +55,14 @@ class Attribute {
 
 class Player {
 
-    constructor(firstName, lastName, gender, nationality, age) {
+    constructor(firstName, lastName, gender, nationality, age, money) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.fullName = `${firstName} ${lastName}`;
         this.gender = gender;
         this.nationality = nationality;
         this.age = age;
+        this.money = money;
         this.inventory = new Inventory();
         this.life = 10;
 	    this.attributes = {

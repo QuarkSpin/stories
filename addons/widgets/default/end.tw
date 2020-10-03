@@ -1,0 +1,9 @@
+:: Widget-End [widget]
+
+<<widget "end">>
+''FIN''
+----
+<<link "Revenir en arrière">><<script>>Engine.backward()<</script>><</link>>
+<<link "Charger une sauvegarde">><<script>>UI.saves()<</script>><</link>>
+<<link "Recommencer au début">><<script>>Engine.restart()<</script>><</link>>
+<</widget>>

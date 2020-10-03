@@ -1,13 +1,19 @@
 :: StoryCaption
-
-<<if $started>>
+<<if $started>>\
 ----
 [img[$player.image]]
 ''$player.fullName''
 $player.nationality, $player.age ans
-* $player.attributes.int.name : ''$player.attributes.int.value''
-* $player.attributes.phy.name : ''$player.attributes.phy.value''
-* $player.attributes.psy.name : ''$player.attributes.psy.value''
-* $player.attributes.hab.name : ''$player.attributes.hab.value''
+* $player.attributes.int.name : $player.attributes.int.value
+* $player.attributes.phy.name : $player.attributes.phy.value
+* $player.attributes.psy.name : $player.attributes.psy.value
+* $player.attributes.hab.name : $player.attributes.hab.value
+Santé : $player.life / 10
+Argent : $player.money €
 ----
 <</if>>
+
+<div class="license">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+Sous licence <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">CC BY-NC-SA 4.0</a>
+</div>
