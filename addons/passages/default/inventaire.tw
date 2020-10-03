@@ -1,0 +1,6 @@
+:: Inventaire
+
+En votre possession :
+<<for _item range $player.inventory.items>>
+* _item.name (_item.count)
+<</for>>

@@ -2,34 +2,34 @@ class Inventory {
     constructor(items = []) {
         this.items = items;
     }
+}
 
-    get count() {
-        return this.items.length;
+window.inv_count = function(inv) {
+    return inv.items.length;
+}
+
+window.inv_has = function(inv, name, count = 1) {
+    let item = inv.items.find(x => x.name === name);
+    return item !== undefined && item.count >= count;
+}
+
+window.inv_add = function(inv, name, count = 1) {
+    let item = inv.items.find(x => x.name === name);
+    if (item !== undefined) {
+        item.count += count;
+    } else {
+        inv.items.push(new Item(name, count));
     }
+}
 
-    has(name, count = 1) {
-        let item = this.items.find(x => x.name === name);
-        return item !== undefined && item.count >= count;
-    }
+window.inv_remove = function(inv, name, count = 1) {
+    let item = inv.items.find(x => x.name === name);
 
-    add(name, count = 1) {
-        let item = this.items.find(x => x.name === name);
-        if (item !== undefined) {
-            item.count += count;
+    if (item !== undefined) {
+        if (item.count > 1) {
+            item.count -= count;
         } else {
-            this.items.push(new Item(name, count));
-        }
-    }
-
-    remove(name, count = 1) {
-        let item = this.items.find(x => x.name === name);
-
-        if (item !== undefined) {
-            if (item.count > 1) {
-                item.count -= count;
-            } else {
-                this.items = this.items.filter(x => x.name !== name);
-            }
+            inv.items = inv.items.filter(x => x.name !== name);
         }
     }
 }

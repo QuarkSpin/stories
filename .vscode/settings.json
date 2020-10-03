@@ -10,7 +10,10 @@
             "iconColour": "magenta"
         },
         "BUG": {
-            "icon": "bug"
+            "icon": "bug",
+            "background": "red",
+            "foreground": "white",
+            "fontWeight": "bold",
         },
         "FIXME": {
             "icon": "flame"

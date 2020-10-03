@@ -90,9 +90,24 @@ Vous êtes mort$e.
 
 :: Réveil - Examen
 
+<<run inv_add($player.inventory, "clé")>>
+
 //Allez $player.firstName//, pensez-vous. //Tu dois garder ton sang froid et analyser la situation.//
 
-TODO
+Vous vous examinez rapidement. Vous portez un jean bleu, un t-shirt gris et une vielle paire de baskets. Vous avez quelques ecchymoses sur les mains.
+Dans votre poche vous trouvez une une petite clé métallique.
+
+<<clink "Intellect" 3 $player.attributes.int.value "Vous examinez vos ecchymoses" "Réveil - Ecchymoses">>
+[[Vous faites le tour du phare|Réveil - Tour du phare]]
+
+:: Réveil - Ecchymoses
+
+Vous regardez les ecchymoses que vous avez sur les mains. A leur couleur et la façon dont elles se résorbent, vous estimes qu'elles datent de deux jours environs.
+
+//Suis-je ici depuis tout ce temps ?//
 
 [[Vous faites le tour du phare|Réveil - Tour du phare]]
-[[Vous faites le tour du phare|Vous e]]
+
+:: Réveil - Tour du phare
+
+TODO

@@ -11,6 +11,14 @@ $player.nationality, $player.age ans
 Santé : $player.life / 10
 Argent : $player.money €
 ----
+<<button "Inventaire">>
+<<script>>
+Dialog.setup("Inventaire", "inventory");
+Dialog.wiki(Story.get("Inventaire").processText());
+Dialog.open();
+<</script>>
+<</button>>
+----
 <</if>>
 
 <div class="license">
