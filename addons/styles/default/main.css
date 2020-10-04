@@ -1,3 +1,12 @@
+.tuto {
+    background-color: #332940;
+    border-color: #9c27b0;
+    border-left-style: solid;
+    border-left-width: 5px;
+    max-width: 90%;
+    padding: 10px 20px 10px 30px;
+}
+
 .link-impossible {
     cursor: default;
     color: #c22;
@@ -18,6 +27,7 @@
 .character-card {
     display: inline-block;
     margin: 10px;
+    text-align: center;
 }
 
 .character-card img {

@@ -1,12 +1,4 @@
 :: Prologue
-<<script>>
-if(State.variables.player.gender === 'm') {
-    for (const key in State.variables.ag) {
-        State.variables.ag[key] = key;
-    }
-    State.variables.e = ''
-}
-<</script>>
 <<set $started = true>>
 
 //Paris, 3 février 1987//
