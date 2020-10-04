@@ -86,13 +86,13 @@ Le barman, un jeune homme un peu pincé, vous jette un regard indiférent.
 :: Prologue - Bar - Bière
 
 <<set $player.money -= 7>>
-
 Vous payez 7€ au serveur qui vous sert une bière.
 
 [[Vous rejoignez vos coéquipiers à votre table|Prologue - Bar - Décharge]]
 
 :: Prologue - Bar - Whisky
 
+<<set $player.money -= 16>>
 Vous payez 16€ au serveur qui vous sert un verre. Vous l'avalez d'une traite.
 
 [[Vous rejoignez vos coéquipiers à votre table|Prologue - Bar - Décharge]]
