@@ -110,4 +110,27 @@ Vous regardez les ecchymoses que vous avez sur les mains. A leur couleur et la f
 
 :: Réveil - Tour du phare
 
+Vous avez à peine commencé à contourner le phare que quelque chose attire votre regard dans les hautes herbes au pied de l'édifice.
+
+[[Vous examinez les hautes herbes|Réveil - Tour du phare - Coffre]]
+[[Vous continuez votre chemin|Réveil - Tour du phare 2]]
+
+:: Réveil - Tour du phare - Coffre
+
+Vous vous approchez et remarque un petit coffre en bois.
+
+[[Vous ouvrez le coffre|Réveil - Tour du phare - Coffre 2]]
+[[Vous continuez votre chemin|Réveil - Tour du phare 2]]
+
+:: Réveil - Tour du phare - Coffre 2
+
+Vous tentez d'ouvrir le coffre mais celui-ci est solidement vérouillé par une large serrure.
+
+<<plink "Physique" 4 $player.attributes.phy.value "Vous tentez de détruire le coffre en frappant dessus avec une pierre">>
+
+[["[Physique, 83%] Vous tentez de détruire le coffre en frappant dessus avec une pierre"|YOLO]]
+TODO
+
+:: Réveil - Tour du phare 2
+
 TODO

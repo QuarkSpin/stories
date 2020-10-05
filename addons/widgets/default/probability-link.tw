@@ -1,0 +1,18 @@
+:: Widget-Probability-Link [widget]
+
+<<widget "plink">>\
+
+Réussise si 1d12 <= Attribut + malus/bonus
+
+Exemple : int du joueur = 6, malus/bonus = -2, résultat du d12 = 7 > 6 - 2 --> échec
+Exemple : int du joueur = 0, malus/bonus = 0, résultat du d12 = 1 --> 1 > 0 --> échec
+Exemple : int du joueur = 6, malus/bonus = -2, résultat du d12 = 2 --> 2 <= 6-2 --> succès
+
+Proba de succès = (Attribut + malus/bonus) / 12
+
+Exemple : int du joueur = 6, malus/bonus = -2 --> proba de succès = 4/12
+
+Exemple de texte : [Physique, 83%] Vous tentez de détruire le coffre en frappant dessus avec une pierre
+
+TODO
+<</widget>>

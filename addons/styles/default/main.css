@@ -7,6 +7,25 @@
     padding: 10px 20px 10px 30px;
 }
 
+.attribute-settings .macro-button {
+    background-color: #2ecc71;
+    border-radius: 2px;
+    border-width: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    color: #ecf0f1;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+    outline: none;
+    transition: background-color .3s;
+    width: 50px;
+}
+
+.attribute-settings .macro-button:hover,
+.attribute-settings .macro-button:focus {
+    background-color: #27ae60;
+}
+
+
 .link-impossible {
     cursor: default;
     color: #c22;
@@ -34,11 +53,11 @@
     width: 150px;
 }
 
-#story-caption > img {
+#story-caption>img {
     width: 90%;
 }
 
-.license > a {
+.license>a {
     color: white;
 }
 

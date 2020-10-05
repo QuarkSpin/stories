@@ -53,39 +53,100 @@ if(State.variables.player.gender === 'm') {
     State.variables.e = ''
 }
 <</script>>
-<<set _points = 12>>
+<<set _points to 12>>
+
 Vous êtes l'agent $player.fullName. Quel est votre profil ?
 
-@@.tuto;Répartissez 12 points au total.@@
+@@.tuto;Points non attribués : <span id="points">12</span>@@
 
-Intellect
-<<numberbox "$player.attributes.int.value" $player.attributes.int.value>>
+@@.attribute-settings;
+$player.attributes.int.name : <span id="int">0</span> / 12  <<button "➕">>
+    <<if _points gt 0>>
+      <<set $player.attributes.int.value++>>
+      <<set _points-->>
+      <<replace "#int">>$player.attributes.int.value<</replace>>
+      <<replace "#points">>_points<</replace>>
+    <</if>>
+<</button>> \
+<<button "➖">>
+    <<if $player.attributes.int.value gt 0>>
+      <<set $player.attributes.int.value-->>
+      <<set _points++>>
+      <<replace "#int">>$player.attributes.int.value<</replace>>
+      <<replace "#points">>_points<</replace>>
+    <</if>>
+<</button>>\
 
-Physique
-<<numberbox "$player.attributes.phy.value" $player.attributes.phy.value>>
+$player.attributes.phy.name : <span id="phy">0</span> / 12  <<button "➕">>
+    <<if _points gt 0>>
+      <<set $player.attributes.phy.value++>>
+      <<set _points-->>
+      <<replace "#phy">>$player.attributes.phy.value<</replace>>
+      <<replace "#points">>_points<</replace>>
+    <</if>>
+<</button>> \
+<<button "➖">>
+    <<if $player.attributes.phy.value gt 0>>
+      <<set $player.attributes.phy.value-->>
+      <<set _points++>>
+      <<replace "#phy">>$player.attributes.phy.value<</replace>>
+      <<replace "#points">>_points<</replace>>
+    <</if>>
+<</button>>\
 
-Psychique
-<<numberbox "$player.attributes.psy.value" $player.attributes.psy.value>>
+$player.attributes.psy.name : <span id="psy">0</span> / 12  <<button "➕">>
+    <<if _points gt 0>>
+      <<set $player.attributes.psy.value++>>
+      <<set _points-->>
+      <<replace "#psy">>$player.attributes.psy.value<</replace>>
+      <<replace "#points">>_points<</replace>>
+    <</if>>
+<</button>> \
+<<button "➖">>
+    <<if $player.attributes.psy.value gt 0>>
+      <<set $player.attributes.psy.value-->>
+      <<set _points++>>
+      <<replace "#psy">>$player.attributes.psy.value<</replace>>
+      <<replace "#points">>_points<</replace>>
+    <</if>>
+<</button>>\
 
-Habilité
-<<numberbox "$player.attributes.hab.value" $player.attributes.hab.value>>
-
+$player.attributes.hab.name : <span id="hab">0</span> / 12  <<button "➕">>
+    <<if _points gt 0>>
+      <<set $player.attributes.hab.value++>>
+      <<set _points-->>
+      <<replace "#hab">>$player.attributes.hab.value<</replace>>
+      <<replace "#points">>_points<</replace>>
+    <</if>>
+<</button>> \
+<<button "➖">>
+    <<if $player.attributes.hab.value gt 0>>
+      <<set $player.attributes.hab.value-->>
+      <<set _points++>>
+      <<replace "#hab">>$player.attributes.hab.value<</replace>>
+      <<replace "#points">>_points<</replace>>
+    <</if>>
+<</button>>\
+@@
 [[Valider|Start - Stats Check]]
 
 :: Start - Stats Check
 
 <<set _total = $player.attributes.int.value + $player.attributes.phy.value + $player.attributes.psy.value + $player.attributes.hab.value>>
-<<if  _total eq 12>>
 Vous avez choisi ces attributs :
 * $player.attributes.int.name : $player.attributes.int.value
 * $player.attributes.phy.name : $player.attributes.phy.value
 * $player.attributes.psy.name : $player.attributes.psy.value
 * $player.attributes.hab.name : $player.attributes.hab.value
-
+<<if  _total neq 12>>\
+@@.tuto;
+Attention, vous n'avez réparti que _total points sur 12.
+@@
+<</if>>\
+<<if $player.attributes.int.value eq 0 or $player.attributes.phy.value eq 0 or $player.attributes.psy.value eq 0 or $player.attributes.hab.value eq 0>>\
+@@.tuto;
+Attention, l'un de vos attributs est à 0. Il est récommendé d'assigner au moins un point à chaque attribut.
+@@
+<</if>>\
 [[Confirmer|Prologue]]
 <<link "Changer">><<script>>Engine.backward()<</script>><</link>>
-<<else>>
-@@.tuto;Vous devez répartir 12 points.@@
-
-<<link "J'ai compris">><<script>>Engine.backward()<</script>><</link>>
-<</if>>
