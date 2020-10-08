@@ -51,11 +51,46 @@ if(State.variables.player.gender === 'm') {
         State.variables.ag[key] = key;
     }
     State.variables.e = ''
+    State.variables.eur = 'eur'
 }
 <</script>>
 <<set _points to 12>>
 
 Vous êtes l'agent $player.fullName. Quel est votre profil ?
+
+<<link `"Pens" + $ag.eur + " (int = 7, phy = 1, psy = 2, hab = 2)"` "Start - Stats Check">>
+  <<set $player.attributes.int.value = 7>>
+  <<set $player.attributes.phy.value = 1>>
+  <<set $player.attributes.psy.value = 2>>
+  <<set $player.attributes.hab.value = 2>>
+<</link>>
+<<link "Brute (int = 1, phy = 8, psy = 1, hab = 2)" "Start - Stats Check">>
+  <<set $player.attributes.int.value = 1>>
+  <<set $player.attributes.phy.value = 8>>
+  <<set $player.attributes.psy.value = 1>>
+  <<set $player.attributes.hab.value = 2>>
+<</link>>
+<<link "Sensible (int = 2, phy = 1, psy = 8, hab = 1)" "Start - Stats Check">>
+  <<set $player.attributes.int.value = 2>>
+  <<set $player.attributes.phy.value = 1>>
+  <<set $player.attributes.psy.value = 8>>
+  <<set $player.attributes.hab.value = 1>>
+<</link>>
+<<link `"Réflex" + $ag.if + " (int = 5, phy = 1, psy = 4, hab = 2)"` "Start - Stats Check">>
+  <<set $player.attributes.int.value = 5>>
+  <<set $player.attributes.phy.value = 1>>
+  <<set $player.attributes.psy.value = 4>>
+  <<set $player.attributes.hab.value = 2>>
+<</link>>
+<<link `"Sport" + $ag.if + " (int = 2, phy = 5, psy = 1, hab = 4)"` "Start - Stats Check">>
+  <<set $player.attributes.int.value = 2>>
+  <<set $player.attributes.phy.value = 5>>
+  <<set $player.attributes.psy.value = 1>>
+  <<set $player.attributes.hab.value = 4>>
+<</link>>
+[[Personnalisé|Start - Stats 2]]
+
+:: Start - Stats 2
 
 @@.tuto;Points non attribués : <span id="points">12</span>@@
 

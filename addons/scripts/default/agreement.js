@@ -7,7 +7,13 @@ const data = {
     lui: 'elle',
     Monsieur: 'Madame',
     monsieur: 'madame',
-    costume: 'robe'
+
+    // Fins de mots
+    eur: 'euse',
+    if: 'ive',
+
+    // Contexte
+    costume: 'robe',
 };
 
 State.variables.ag = data;

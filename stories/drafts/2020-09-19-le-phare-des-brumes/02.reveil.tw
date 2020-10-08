@@ -124,11 +124,33 @@ Vous vous approchez et remarque un petit coffre en bois.
 
 :: Réveil - Tour du phare - Coffre 2
 
-Vous tentez d'ouvrir le coffre mais celui-ci est solidement vérouillé par une large serrure.
+Vous tentez d'ouvrir le coffre mais celui-ci est solidement vérouillé par une large serrure rouillée.
 
-<<plink "Physique" 4 $player.attributes.phy.value "Vous tentez de détruire le coffre en frappant dessus avec une pierre">>
+<<plink "Physique" 4 $player.attributes.phy.value "Vous tentez de détruire le coffre en frappant dessus avec une pierre" "Réveil - Tour du phare - Coffre Pierre Succès" "Réveil - Tour du phare - Coffre Pierre Échec">>
+<<plink "Habilité" 2 $player.attributes.hab.value "Vous tentez de crocheter la serrure avec des brindilles" "Réveil - Tour du phare - Coffre Crocheter Succès" "Réveil - Tour du phare - Coffre Crocheter Échec">>
+[["Vous arrachez la serrure rouillée avec vos mains (pénalité de santé : 2)."|Réveil - Tour du phare - Coffre Arracher]]
+[[Vous abandonnez et continuez de faire le tour du phare|Réveil - Tour du phare 2]]
 
-[["[Physique, 83%] Vous tentez de détruire le coffre en frappant dessus avec une pierre"|YOLO]]
+
+:: Réveil - Tour du phare - Coffre Pierre Succès
+
+TODO
+
+:: Réveil - Tour du phare - Coffre Pierre Échec
+
+TODO
+
+
+:: Réveil - Tour du phare - Coffre Crocheter Succès
+
+TODO
+
+:: Réveil - Tour du phare - Coffre Crocheter Échec
+
+TODO
+
+:: Réveil - Tour du phare - Coffre Arracher
+<<set $player.life -= 2>>
 TODO
 
 :: Réveil - Tour du phare 2
