@@ -1,9 +1,0 @@
-:: Widget-Conditional-Link [widget]
-
-<<widget "clink">>\
-<<if ($args[2] gte $args[1])>>\
-<<link `"[" + $args[0] + " ≥ " + $args[1] + "] " + $args[3]` $args[4]>><</link>>\
-<<else>>\
-<a class="link-impossible">[$args[0] ≥ $args[1]] $args[3]</a>\
-<</if>>\
-<</widget>>
