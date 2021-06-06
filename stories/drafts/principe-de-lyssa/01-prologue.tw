@@ -1,0 +1,59 @@
+:: Prologue
+<<audio "background_main" volume 0.25 loop play>>
+
+<<type 50ms start 1s>>\
+	//Les abîmes les plus insondables sont souvent ceux dont on ignore l'existence.//
+<</type>>\
+<<type 50ms start 2s>>\
+	//Un jour, vous serez en mesure de les voir clairement et de comprendre leur véritable nature.//
+<</type>>\
+<<type 50ms start 3s element "span">>\
+	//D'ici là//\
+<</type>>\
+<<type 50ms start 1s element "span">>\
+	// ils restent un mystère.//
+<</type>>\
+
+<<type 10ms start 3s>>\
+[[Continuer|Prologue-1]]
+<</type>>
+
+:: Prologue-1
+
+Vous êtes Émile Fresnel, un jeune et brillant physicien de classe mondiale. Vous avez été recruté par l'armée française et envoyé sur Ua Huka, une petite île volcanique de la Polynésie Française, dans le Pacifique Sud. On ne vous a pas expliqué pourquoi, seulement que c'est "secret défense". Vous n'en savez pas plus.
+
+Il est 8h30 du matin. C'est le <<linkappend "milieu du mois de juillet.">> Vous ne savez pas quand exactement, vous avez perdu le compte des jours. On vous a tout enlevé : téléphone, montre... Celà fait des semaines que vous attendez à rien faire ou presque dans vos quartiers, dans cette petite base militaire.<</linkappend>>
+
+Le capitaine Cormier, votre interlocuteur avec l'armée, doit venir vous chercher sous peu. Allez-vous enfin savoir de quoi il retourne ?
+
+[[Vous patientez calmement|Prologue-Capitaine]]
+[[Vous lisez un livre pour passer le temps|Prologue-Attente-Livre]]
+[[Vous faites impatiamment les cent pas|...]]
+
+:: Prologue-Attente-Livre
+
+Vous vous asseyez sur le coin de votre lit et reprenez <<linkappend "le livre que vous avez entamé il y a quelques jours">>, //Les Amants du Spoutnik//, un drame romantique et fantastique du romancier japonais Haruki Murakami. Un classique paraît-il<</linkappend>>. Ce n'est pas comme si vous aviez d'autres loisirs de toute façon.
+
+[[Continuer|Prologue-Capitaine]]
+
+:: Prologue-Attente-CentPas
+
+Vous bouillez d'impatiance et de cusiosité. Allez-vous enfin savoir pourquoi vous êtes là ?
+Vous tournez en rond dans votre chambre, chaquye seconde semblannt durer uen éternité.
+
+[[Continuer|Prologue-Capitaine]]
+
+:: Prologue-Capitaine
+
+Après une bonne dizaine de minutes, la porte s'ouvre.
+
+//Debout Fresnel !// tonne la voix impérative du capitaine. //Prenez vos instruments et rendez-vous à l'héliport. Vous décollez dans 5 minutes !//
+
+
+<!-- <<type 40ms start 2s>>\
+	— Inscription trouvée sur un tiki à Ua Huka.
+<</type>>\ -->
+
+<!-- Alors que l'hélicoptère vous transporte vers une destination inconnue, les mots d'Alexandra vous trottent dans la tête. Vous avez beau les lire et relire, griffés à la hâte sur un bout de papier, vous n'y voyez pas plus clair.
+
+Vous n'avez pas eu l'occasion d'interroger votre collègue ce matin. Le colonel Malet était si pressé que vous n'avez même pas eu le temps de prendre votre petit déjeuner. Et Alexandra, elle, n'a eu que le temps de vous glisser ce mot furetivement en vous croisant sur le départ. -->

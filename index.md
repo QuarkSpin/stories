@@ -6,4 +6,4 @@
 
 ## En cours d'écriture
 
-[Le Phare des Brumes](./stories/publication/2020-09-19-le-phare-des-brumes/index.html)
+[Le Principe de Lyssa](./stories/publication/principe-de-lyssa.html) — Genres : mystère, étrange

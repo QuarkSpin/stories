@@ -1,0 +1,12 @@
+
+
+/* Inline append links */
+
+.link-internal.macro-linkappend {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.macro-linkappend-insert {
+    color: aquamarine;
+}

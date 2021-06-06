@@ -11,10 +11,26 @@ Some interactive stories (mostly in French) made with [TweeGo](https://www.motos
 ## Compilation
 
 ```shell
-tweego -f sugarcube-2 -o ./stories/publication/OUTPUT_FILE ./addons/scripts/default ./addons/widgets/default ./addons/passages/default ./addons/styles/default ./stories/drafts/STORY_DIR --head=./addons/head.html
+tweego -f <FORMAT> -o <OUTPUT_FILE_NAME> <INPUT_DIRECTORIES>
 ```
 
 * Compile : `tweego -f <FORMAT> -o <OUTPUT_FILE_NAME> <INPUT_DIRECTORIES>`
+* Head : `--head=./PATH-TO-HEAD.html`
 * Test : add `-t`
 * Watch : add `-w`
-* List supported formats : `tweego --list-formats`
+
+Example (powershell multiline) :
+
+```powershell
+tweego `
+  -f sugarcube-2 `
+  -o ./stories/publication/principe-de-lyssa.html `
+  ./addons/localization/ui-french.js `
+  ./addons/tutorials `
+  ./addons/styles/default `
+  ./stories/drafts/principe-de-lyssa `
+  -w
+```
+
+NB : List supported formats using `tweego --list-formats`
+

@@ -1,0 +1,7 @@
+:: Tuto-Simple
+
+La fiction interactive se rapproche du concept des //livres dont vous êtes le héros//. A la fin d'une scène, plusieurs options vous sont présentées. En cliquant dessus, vous choisissez dans quelle direction vous voulez orienter l'histoire.
+
+Il peut également y avoir des <<linkappend "éléments cliquables">>, qui font apparaitre des informations supplémentaires,<</linkappend>> en milieu de texte.
+
+[[Débuter l'aventure|Prologue]]
