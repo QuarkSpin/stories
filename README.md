@@ -28,6 +28,8 @@ tweego `
   ./addons/localization/ui-french.js `
   ./addons/tutorials `
   ./addons/styles/default `
+  ./addons/widgets/default `
+  ./addons/passages/default `
   ./stories/drafts/principe-de-lyssa `
   -w
 ```

@@ -1,0 +1,5 @@
+:: Widget-UpdateSidebar [widget]
+<<widget "update-sidebar">><<silently>>
+<!-- <<replace "#story-banner">><<display "StoryBanner">><</replace>> -->
+<<replace "#story-caption">><<display "StoryCaption">><</replace>>
+<</silently>><</widget>>

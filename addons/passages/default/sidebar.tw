@@ -1,0 +1,14 @@
+:: StoryCaption
+
+<<if SimpleAudio.mute()>>
+<<button "🔊">>
+     <<run SimpleAudio.mute(false);>>
+     <<update-sidebar>>
+<</button>>
+<<else>>
+<<button "🔇">>
+     <<run SimpleAudio.mute(true);>>
+     <<update-sidebar>>
+<</button>>
+<</if>>
+

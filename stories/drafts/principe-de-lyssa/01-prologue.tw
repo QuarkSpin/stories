@@ -1,5 +1,5 @@
 :: Prologue
-<<audio "background_main" volume 0.25 loop play>>
+<<audio "background_main" volume 0.75 loop play>>
 
 <<type 50ms start 1s>>\
 	//Les abîmes les plus insondables sont souvent ceux dont on ignore l'existence.//
@@ -28,7 +28,7 @@ Le capitaine Cormier, votre interlocuteur avec l'armée, doit venir vous cherche
 
 [[Vous patientez calmement|Prologue-Capitaine]]
 [[Vous lisez un livre pour passer le temps|Prologue-Attente-Livre]]
-[[Vous faites impatiamment les cent pas|...]]
+[[Vous faites impatiamment les cent pas|Prologue-Attente-CentPas]]
 
 :: Prologue-Attente-Livre
 
@@ -45,10 +45,43 @@ Vous tournez en rond dans votre chambre, chaquye seconde semblannt durer uen ét
 
 :: Prologue-Capitaine
 
-Après une bonne dizaine de minutes, la porte s'ouvre.
+Après une bonne dizaine de minutes, la porte s'ouvre sur un homme d'âge moyen en treillis.
 
 //Debout Fresnel !// tonne la voix impérative du capitaine. //Prenez vos instruments et rendez-vous à l'héliport. Vous décollez dans 5 minutes !//
 
+Le militaire ne s'attarde pas et tourne les talons.
+
+[[Vous attrapez votre sac et allez vers l'héliport|Prologue-SacSelection]]
+[[Vous allez vers l'héliport sans emporter vos affaires|Prologue-SacVide]]
+[[Vous désobéisser au capitaine et restez dans votre chambre|Prologue-Rester]]
+[[Vous tentez d'étrangler le capitaine|Prologue-AttaqueCapitaine]]
+
+:: Prologue-SacSelection
+
+TODO
+
+:: Prologue-SacVide
+
+TODO
+
+:: Prologue-Rester
+
+Vous ignorez l'injonction du militaire et décidez de rester dans votre chambre.
+
+Une minute plus tard, le capitaine resurgit par la porte.
+
+// Qu'est-ce que vous foutez encore ici, Fresnel ?// demande-t-il furieux ? //Bougez-vous !//
+
+[[Vous attrapez votre sac et allez vers l'héliport|Prologue-SacSelection]]
+[[Vous allez vers l'héliport sans emporter vos affaires|Prologue-SacVide]]
+[[Vous tentez d'étrangler le capitaine|Prologue-AttaqueCapitaine]]
+
+:: Prologue-AttaqueCapitaine
+
+TODO
+
+
+<!-- <<fin>> -->
 
 <!-- <<type 40ms start 2s>>\
 	— Inscription trouvée sur un tiki à Ua Huka.
