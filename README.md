@@ -8,6 +8,15 @@ Some interactive stories (mostly in French) made with [TweeGo](https://www.motos
 
 ![Stories license : CC BY-NC-SA 4.0](<https://img.shields.io/badge/Stories License-CC BY--NC--SA 4.0-blue?style=flat-square>)
 
+## Stories
+
+🇫🇷 [Le Principe de Lyssa](./stories/publication/principe-de-lyssa.html)
+
+* **Genres** : mystère, étrange, survie
+* **Durée** : courte
+* **Difficulté** : facile
+* **Autres** : musique
+
 ## Compilation
 
 ```shell
@@ -27,6 +36,7 @@ tweego `
   -o ./stories/publication/principe-de-lyssa.html `
   ./addons/localization/ui-french.js `
   ./addons/tutorials `
+  ./addons/scripts/default `
   ./addons/styles/default `
   ./addons/widgets/default `
   ./addons/passages/default `

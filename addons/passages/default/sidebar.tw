@@ -1,5 +1,17 @@
 :: StoryCaption
 
+<<if $started and $inv>>\
+----
+<<button "Inventaire">>
+<<script>>
+Dialog.setup("Inventaire", "inventory");
+Dialog.wiki(Story.get("Inventaire").processText());
+Dialog.open();
+<</script>>
+<</button>>
+----
+<</if>>\
+
 <<if SimpleAudio.mute()>>
 <<button "🔊">>
      <<run SimpleAudio.mute(false);>>
@@ -12,3 +24,6 @@
 <</button>>
 <</if>>
 
+<div class="license">
+Textes sous licence<br><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">CC BY-NC-SA 4.0</a>
+</div>
