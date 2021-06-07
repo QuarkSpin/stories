@@ -2,7 +2,7 @@
 
 ## About
 
-Some interactive stories (mostly in French) made with [TweeGo](https://www.motoslave.net/tweego/) and [SugarCube](https://www.motoslave.net/sugarcube/2/)
+Interactive fiction in French made with Twine/TweeGo and SugarCube.
 
 ![Code license : GNU AGPL-3.0](<https://img.shields.io/badge/Code License-AGPL--3.0-blue?style=flat-square>)
 
@@ -45,4 +45,3 @@ tweego `
 ```
 
 NB : List supported formats using `tweego --list-formats`
-

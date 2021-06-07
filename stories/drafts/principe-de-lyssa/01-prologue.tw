@@ -21,7 +21,7 @@
 
 :: Prologue-1
 
-Vous êtes Émile Fresnel, un jeune et brillant <<linkappend "physicien de classe mondiale">>, spécialiste du modèle standard et de la théorie des cordes<</linkappend>>. Vous avez été recruté par l'armée française et envoyé sur <<linkappend "Ua Huka">>, une petite île volcanique de la Polynésie Française, dans le Pacifique Sud<</linkappend>>. On ne vous a pas expliqué pourquoi, seulement que c'est "secret défense". Vous n'en savez pas plus.
+Vous êtes Émile Fresnel, un jeune et brillant <<linkappend "physicien de classe mondiale">>, spécialiste du modèle standard et de la théorie des cordes<</linkappend>>. Vous avez été recruté par l'armée française et envoyé sur <<linkappend "Nuku Hiva">>, une île volcanique dans l’archipel des Marquises en Polynésie Française, dans le Pacifique Sud<</linkappend>>. On ne vous a pas expliqué pourquoi, seulement que c'est "secret défense". Vous n'en savez pas plus.
 
 Vous êtes dans vos quartiers. Il est 8h30 du matin. C'est le <<linkappend "milieu du mois de juillet.">> Vous ne savez pas quel jour exactement, vous avez perdu le compte du temps. On vous a tout enlevé : téléphone, montre... Celà fait des semaines que vous attendez à rien faire ou presque, dans cette petite base militaire.<</linkappend>>
 
@@ -60,7 +60,9 @@ Le militaire ne s'attarde pas et tourne les talons.
 :: Prologue-SacSelection
 
 <<set $sac = true>>\
-Vous enboitez le pas au militaire, en saisissant <<linkappend "votre sac">>, un sac à dos tactique de 45 litres fourni par l'armée,<</linkappend>> au passage. Mais que contient-il ?
+Vous enboitez le pas au militaire, en saisissant <<linkappend "votre sac">>, un sac à dos tactique de 45 litres fourni par l'armée,<</linkappend>> au passage.
+
+Que contient-il ?
 
 <<link "Des équipements de mesure, une corde et une lampe-torche" "Heliport">>\
 	<<run inv_add($inv, "Équipement de mesure")>>\
@@ -102,18 +104,8 @@ Vous ignorez l'injonction du militaire et décidez de rester dans votre chambre.
 
 :: Prologue-AttaqueCapitaine
 
-Pris d'une <<linkappend "pulsion inexplicable">>, sans doute une bouffée de folie causée par vos semaines de cantonnement dans vos quartiers<</linkappend>>, vous sautez à la gorge de capitaine. Malheureusement, son entrainement de militaire est plus utile au combat que votre doctorat en physique. Vous êtes instantanément maitrisé et mis au arrêts.
+Pris d'une <<linkappend "pulsion inexplicable">>, sans doute une bouffée de folie causée par vos semaines de cantonnement dans vos quartiers<</linkappend>>, vous sautez à la gorge de capitaine. Malheureusement pour vous, son entrainement de militaire est plus utile au combat que votre doctorat en physique. Vous êtes instantanément maitrisé et mis au arrêts.
 
 Votre mission s'arrête ici.
 
 <<fin>>
-
-<!-- <<fin>> -->
-
-<!-- <<type 40ms start 2s>>\
-	— Inscription trouvée sur un tiki à Ua Huka.
-<</type>>\ -->
-
-<!-- Alors que l'hélicoptère vous transporte vers une destination inconnue, les mots d'Alexandra vous trottent dans la tête. Vous avez beau les lire et relire, griffés à la hâte sur un bout de papier, vous n'y voyez pas plus clair.
-
-Vous n'avez pas eu l'occasion d'interroger votre collègue ce matin. Le colonel Malet était si pressé que vous n'avez même pas eu le temps de prendre votre petit déjeuner. Et Alexandra, elle, n'a eu que le temps de vous glisser ce mot furetivement en vous croisant sur le départ. -->

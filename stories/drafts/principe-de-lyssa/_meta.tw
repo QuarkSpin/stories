@@ -9,3 +9,4 @@ Le Principe de Lyssa
 
 :: StoryInit
 <<cacheaudio "background_main" "mp3|https://incompetech.com/music/royalty-free/mp3-royaltyfree/Almost%20in%20F.mp3">>
+<<cacheaudio "helico_start" "mp3|https://www.soundjay.com/transportation/helicopter-starting-interior-01.mp3">>
