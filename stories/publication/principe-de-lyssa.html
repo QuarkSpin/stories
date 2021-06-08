@@ -109,6 +109,10 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 
 .macro-linkappend-insert {
     color: aquamarine;
+}
+
+.macro-linkappend:not(.link-internal) {
+    color: #eee;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "ui-french.js" */
 /* General */
 l10nStrings.identity = "aventure";
@@ -298,11 +302,11 @@ Textes sous licence&lt;br&gt;&lt;a rel=&quot;license&quot; target=&quot;_blank&q
 
 Bienvenue dans //Le Principe de Lyssa//, une courte fiction interactive aux accents d&#39;étrange et de mystère.
 
-🎧 //L&#39;aventure est accompagnée d&#39;une musique d&#39;ambiance. Pensez à activer le son si vous souhautez en profiter.//
+🎧 //L&#39;aventure est accompagnée d&#39;une musique d&#39;ambiance. Pensez à activer le son si vous souhaitez en profiter.//
 
 [[Démarrer|Prologue]]
-[[Tutoriel|Tuto-Simple]]</tw-passagedata><tw-passagedata pid="8" name="Prologue" tags="" position="975,100" size="100,100">&lt;&lt;audio &quot;background_main&quot; volume 0.75 loop play&gt;&gt;
-&lt;&lt;set $started = true&gt;&gt;
+[[Tutoriel|Tuto-Simple]]</tw-passagedata><tw-passagedata pid="8" name="Prologue" tags="" position="975,100" size="100,100">&lt;&lt;audio &quot;background_main&quot; volume 0.75 loop play&gt;&gt;\
+&lt;&lt;set $started = true&gt;&gt;\
 
 &lt;&lt;type 50ms start 1s&gt;&gt;\
 	//Les abîmes les plus insondables sont souvent ceux dont on ignore l&#39;existence.//
@@ -319,18 +323,18 @@ Bienvenue dans //Le Principe de Lyssa//, une courte fiction interactive aux acce
 
 &lt;&lt;type 10ms start 3s&gt;&gt;\
 [[Continuer|Prologue-1]]
-&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Prologue-1" tags="" position="1100,100" size="100,100">Vous êtes Émile Fresnel, un jeune et brillant &lt;&lt;linkappend &quot;physicien de classe mondiale&quot;&gt;&gt;, spécialiste du modèle standard et de la théorie des cordes&lt;&lt;/linkappend&gt;&gt;. Vous avez été recruté par l&#39;armée française et envoyé sur &lt;&lt;linkappend &quot;Nuku Hiva&quot;&gt;&gt;, une île volcanique dans l’archipel des Marquises en Polynésie Française, dans le Pacifique Sud&lt;&lt;/linkappend&gt;&gt;. On ne vous a pas expliqué pourquoi, seulement que c&#39;est &quot;secret défense&quot;. Vous n&#39;en savez pas plus.
+&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Prologue-1" tags="" position="1100,100" size="100,100">Vous êtes Émile Fresnel, un jeune et brillant &lt;&lt;linkappend &quot;physicien de classe mondiale&quot;&gt;&gt;, spécialiste du modèle standard et de la théorie des cordes&lt;&lt;/linkappend&gt;&gt;. Vous avez été recruté par l&#39;armée française et envoyé sur &lt;&lt;linkappend &quot;Nuku Hiva&quot;&gt;&gt;, une île volcanique dans l’archipel des Marquises en Polynésie française, dans le Pacifique Sud&lt;&lt;/linkappend&gt;&gt;. On ne vous a pas expliqué pourquoi, seulement que c&#39;est &quot;secret défense&quot;. Vous n&#39;en savez pas plus.
 
-Vous êtes dans vos quartiers. Il est 8h30 du matin. C&#39;est le &lt;&lt;linkappend &quot;milieu du mois de juillet.&quot;&gt;&gt; Vous ne savez pas quel jour exactement, vous avez perdu le compte du temps. On vous a tout enlevé : téléphone, montre... Celà fait des semaines que vous attendez à rien faire ou presque, dans cette petite base militaire.&lt;&lt;/linkappend&gt;&gt;
+Vous êtes dans vos quartiers. Il est 8h30 du matin. C&#39;est le &lt;&lt;linkappend &quot;milieu du mois de juillet.&quot;&gt;&gt; Vous ne savez pas quel jour exactement, vous avez perdu le compte du temps. On vous a tout enlevé : téléphone, montre... Cela fait des semaines que vous attendez à ne rien faire ou presque, dans cette petite base militaire.&lt;&lt;/linkappend&gt;&gt;
 
 Le capitaine Cormier, votre interlocuteur avec l&#39;armée, doit venir vous chercher sous peu. Allez-vous enfin savoir de quoi il retourne ?
 
 [[Vous patientez calmement|Prologue-Capitaine]]
 [[Vous lisez un livre pour passer le temps|Prologue-Attente-Livre]]
-[[Vous faites impatiamment les cent pas|Prologue-Attente-CentPas]]</tw-passagedata><tw-passagedata pid="10" name="Prologue-Attente-Livre" tags="" position="1225,100" size="100,100">Vous vous asseyez sur le coin de votre lit et reprenez &lt;&lt;linkappend &quot;le livre que vous avez entamé il y a quelques jours&quot;&gt;&gt;, //Les Amants du Spoutnik//, un drame romantique et fantastique du romancier japonais Haruki Murakami. Un classique paraît-il&lt;&lt;/linkappend&gt;&gt;. Ce n&#39;est pas comme si vous aviez d&#39;autres loisirs de toute façon.
+[[Vous faites impatiemment les cent pas|Prologue-Attente-CentPas]]</tw-passagedata><tw-passagedata pid="10" name="Prologue-Attente-Livre" tags="" position="1225,100" size="100,100">Vous vous asseyez sur le coin de votre lit et reprenez &lt;&lt;linkappend &quot;le livre que vous avez entamé il y a quelques jours&quot;&gt;&gt;, //Les Amants du Spoutnik//, un drame romantique et fantastique du romancier japonais Haruki Murakami. Un classique parait-il&lt;&lt;/linkappend&gt;&gt;. Ce n&#39;est pas comme si vous aviez d&#39;autres loisirs de toute façon.
 
-[[Continuer|Prologue-Capitaine]]</tw-passagedata><tw-passagedata pid="11" name="Prologue-Attente-CentPas" tags="" position="100,225" size="100,100">Vous bouillez d&#39;impatiance et de cusiosité. Allez-vous enfin savoir pourquoi vous êtes là ?
-Vous tournez en rond dans votre chambre, chaquye seconde semblannt durer uen éternité.
+[[Continuer|Prologue-Capitaine]]</tw-passagedata><tw-passagedata pid="11" name="Prologue-Attente-CentPas" tags="" position="100,225" size="100,100">Vous bouillez d&#39;impatience et de curiosité. Allez-vous enfin savoir pourquoi vous êtes là ?
+Vous tournez en rond dans votre chambre, chaque seconde semblant durer une éternité.
 
 [[Continuer|Prologue-Capitaine]]</tw-passagedata><tw-passagedata pid="12" name="Prologue-Capitaine" tags="" position="225,225" size="100,100">Après une bonne dizaine de minutes, la porte s&#39;ouvre sur un homme d&#39;âge moyen en treillis.
 
@@ -340,9 +344,9 @@ Le militaire ne s&#39;attarde pas et tourne les talons.
 
 [[Vous attrapez votre sac et allez vers l&#39;héliport|Prologue-SacSelection]]
 [[Vous allez vers l&#39;héliport sans emporter vos affaires|Prologue-SansSac]]
-[[Vous désobéisser au capitaine et restez dans votre chambre|Prologue-Rester]]
+[[Vous désobéissez au capitaine et restez dans votre chambre|Prologue-Rester]]
 [[Vous tentez d&#39;étrangler le capitaine|Prologue-AttaqueCapitaine]]</tw-passagedata><tw-passagedata pid="13" name="Prologue-SacSelection" tags="" position="350,225" size="100,100">&lt;&lt;set $sac = true&gt;&gt;\
-Vous enboitez le pas au militaire, en saisissant &lt;&lt;linkappend &quot;votre sac&quot;&gt;&gt;, un sac à dos tactique de 45 litres fourni par l&#39;armée,&lt;&lt;/linkappend&gt;&gt; au passage.
+Vous emboitez le pas au militaire, en saisissant &lt;&lt;linkappend &quot;votre sac&quot;&gt;&gt;, un sac à dos tactique de 45 litres fourni par l&#39;armée,&lt;&lt;/linkappend&gt;&gt; au passage.
 
 Que contient-il ?
 
@@ -366,7 +370,7 @@ Que contient-il ?
 	&lt;&lt;run inv_add($inv, &quot;Paquet de Dragibus&quot;)&gt;&gt;\
 &lt;&lt;/link&gt;&gt;
 [[Rien, il est vide|Heliport]]</tw-passagedata><tw-passagedata pid="14" name="Prologue-SansSac" tags="" position="475,225" size="100,100">&lt;&lt;set $sac = false&gt;&gt;\
-Vous enboitez le pas au militaire, en laissant &lt;&lt;linkappend &quot;votre sac&quot;&gt;&gt;, un sac à dos tactique de 45 litres fourni par l&#39;armée,&lt;&lt;/linkappend&gt;&gt; et tout ce qu&#39;il contient.
+Vous emboitez le pas au militaire, en laissant &lt;&lt;linkappend &quot;votre sac&quot;&gt;&gt;, un sac à dos tactique de 45 litres fourni par l&#39;armée,&lt;&lt;/linkappend&gt;&gt; et tout ce qu&#39;il contient.
 
 [[Continuer|Heliport]]</tw-passagedata><tw-passagedata pid="15" name="Prologue-Rester" tags="" position="600,225" size="100,100">Vous ignorez l&#39;injonction du militaire et décidez de rester dans votre chambre. Une minute plus tard, le capitaine resurgit par la porte.
 
@@ -374,16 +378,16 @@ Vous enboitez le pas au militaire, en laissant &lt;&lt;linkappend &quot;votre sa
 
 [[Vous attrapez votre sac et allez vers l&#39;héliport|Prologue-SacSelection]]
 [[Vous allez vers l&#39;héliport sans emporter vos affaires|Prologue-SansSac]]
-[[Vous tentez d&#39;étrangler le capitaine|Prologue-AttaqueCapitaine]]</tw-passagedata><tw-passagedata pid="16" name="Prologue-AttaqueCapitaine" tags="" position="725,225" size="100,100">Pris d&#39;une &lt;&lt;linkappend &quot;pulsion inexplicable&quot;&gt;&gt;, sans doute une bouffée de folie causée par vos semaines de cantonnement dans vos quartiers&lt;&lt;/linkappend&gt;&gt;, vous sautez à la gorge de capitaine. Malheureusement pour vous, son entrainement de militaire est plus utile au combat que votre doctorat en physique. Vous êtes instantanément maitrisé et mis au arrêts.
+[[Vous tentez d&#39;étrangler le capitaine|Prologue-AttaqueCapitaine]]</tw-passagedata><tw-passagedata pid="16" name="Prologue-AttaqueCapitaine" tags="" position="725,225" size="100,100">Pris d&#39;une &lt;&lt;linkappend &quot;pulsion inexplicable&quot;&gt;&gt;, sans doute une bouffée de folie causée par vos semaines de cantonnement dans vos quartiers&lt;&lt;/linkappend&gt;&gt;, vous sautez à la gorge de capitaine. Malheureusement pour vous, son entrainement de militaire est plus utile au combat que votre doctorat en physique. Vous êtes instantanément maitrisé et mis aux arrêts.
 
 Votre mission s&#39;arrête ici.
 
-&lt;&lt;fin&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Heliport" tags="" position="850,225" size="100,100">Vous suivez tant bien que mal le capitaine Cormier, qui marche d&#39;un bon pas. Peu après vous sortez du bâtiments où vous avez passé les dernières semaines et vous retrouvez dans une grande cour goudronée. Plusieurs véhicules de l&#39;armée y sont stationnés ainsi qu&#39;un gros &lt;&lt;linkappend &quot;hélicoptère&quot;&gt;&gt;, un Airbus //Caracal// de trasport. Vous en avez déjà vu plusieurs à la base aérienne près de chez vous, dans les Pyrénées&lt;&lt;/linkappend&gt;&gt;.
+&lt;&lt;fin&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Heliport" tags="" position="850,225" size="100,100">Vous suivez tant bien que mal le capitaine Cormier, qui marche d&#39;un bon pas. Peu après vous sortez du bâtiment où vous avez passé les dernières semaines et vous retrouvez dans une grande cour goudronnée. Plusieurs véhicules de l&#39;armée y sont stationnés ainsi qu&#39;un gros &lt;&lt;linkappend &quot;hélicoptère&quot;&gt;&gt;, un Airbus //Caracal// de trasport. Vous en avez déjà vu plusieurs à la base aérienne près de chez vous, dans les Pyrénées&lt;&lt;/linkappend&gt;&gt;.
 
 //Embarquez !// vous dit Cormier en faisant un geste vers l&#39;appareil. //Les détails de votre mission vous seront communiqués par le lieutenant Boisselot à votre arrivée. Bonne chance !//
 
-[[&quot;Quoi ? C&#39;est tout ?&quot;|Heliport-Quoi]]
-[[Vous ignorez la capiraine et montez dans l&#39;hélicoptère|Helicopter]]</tw-passagedata><tw-passagedata pid="18" name="Heliport-Quoi" tags="" position="975,225" size="100,100">//Quoi ? C&#39;est tout ?// demandez-vous au capitaine, à la fois surpris et fusieux. //Ça fait des semaines que je porote dans cette base pourrie et je n&#39;ai pas droit à plus d&#39;explications ?!//
+[[&#39;&quot;Quoi ? C&#39;est tout ?&quot;&#39;|Heliport-Quoi]]
+[[Vous ignorez le capitaine et montez dans l&#39;hélicoptère|Helicopter]]</tw-passagedata><tw-passagedata pid="18" name="Heliport-Quoi" tags="" position="975,225" size="100,100">//Quoi ? C&#39;est tout ?// demandez-vous au capitaine, à la fois surpris et furieux. //Ça fait des semaines que je poirote dans cette base pourrie et je n&#39;ai pas droit à plus d&#39;explications ?!//
 
 //Fermez-la Fresnel !// vous coupe l&#39;officier. //Contentez-vous de suivre les ordres !//
 
@@ -391,24 +395,24 @@ Votre mission s&#39;arrête ici.
 
 //Bienvenue à bord, professeur.//
 
-Vous n&#39;êtes pas professeur, mais peu importe. L&#39;homme qui vous a aceuilli, un militaire d&#39;une quarantaine d&#39;années vêtu de la combinaison verte de l&#39;aéronavale, vous tend un casque.
+Vous n&#39;êtes pas professeur, mais peu importe. L&#39;homme qui vous a accueilli, un militaire d&#39;une quarantaine d&#39;années vêtu de la combinaison verte de l&#39;aéronavale, vous tend un casque.
 
 //Mettez ça//, dit-il. //Et asseyez-vous sur le côté, on décolle dans quelques instants !//
 
 Sur ces mots, il referme la porte latérale et s&#39;en va rejoindre le pilote dans le cockpit.
 
-Vous avisez un banc sur le flanc, et vous installez inconfortablement. Au fond de l&#39;appareil se trouvent deux caisses métalliques arrimées. En face de vous, sur un autre banc, est assise une jeune femme. Civile comme vous, la trentaine, elle a l&#39;air un peu désorientée.
+Vous avisez un banc sur le flanc, et vous installez inconfortablement. Au fond de l&#39;appareil se trouvent deux caisses métalliques arrimées. En face de vous, sur un autre banc, est assise une jeune femme. Civile comme vous, la trentaine, elle a l&#39;air moins désorientée que vous. Ce n&#39;est peut-être pas sa première mission. Est-elle physicienne, comme vous ?
 
 Vous lui adressez un petit signe de tête, mais déjà les moteurs se mettent en marche et l&#39;appareil commence à trembler.
 
-[[Continuer|Helicopter-Start]]</tw-passagedata><tw-passagedata pid="20" name="Helicopter-Start" tags="" position="1225,225" size="100,100">&lt;&lt;audio &quot;helico_start&quot; volume 0.75 play&gt;&gt;
+[[Continuer|Helicopter-Start]]</tw-passagedata><tw-passagedata pid="20" name="Helicopter-Start" tags="" position="1225,225" size="100,100">&lt;&lt;audio &quot;helico_start&quot; volume 0.75 play&gt;&gt;\
 
 Dans un bruit assourdissant, les pales se mettent à tourner et l&#39;appareil s&#39;élève lentement.
-En quelques dizaines de secondes, vous vous retrouvez à plusieurs centaines de mètres au-dessus du sol, puis l&#39;hélicoptère s&#39;incline et s&#39;éloigne de la base vers une destination qui vos est enore inconnue.
+En quelques dizaines de secondes, vous vous retrouvez à plusieurs centaines de mètres au-dessus du sol, puis l&#39;hélicoptère s&#39;incline et s&#39;éloigne de la base vers une destination qui vos est encore inconnue.
 
 [[Vous vous entamez une conversation avec la jeune femme|Helico-Alexandra-Start]]
 [[Vous faites une sieste durant le trajet|Helico-Sieste]]
-[[Vous vous installez près de la porte latérale pour regarder dehors pendans le trajet|Helico-Fenêtre]]
+[[Vous vous installez près de la porte latérale pour regarder dehors pendant le trajet|Helico-Fenêtre]]
 [[Vous attaquez le pilote pour prendre le contrôle de l&#39;appareil|Helico-AttaquePilote]]</tw-passagedata><tw-passagedata pid="21" name="Helico-AttaquePilote" tags="" position="100,350" size="100,100">//Mais dans quoi me suis-je embarqué ?// vous demandez-vous. Soudain vous n&#39;avez plus du tout envie de partir vers je-ne-sais-où, pour faire je-ne-sais-quoi. C&#39;est décidé, vous rentrez chez vous !
 
 Vous vous levez et foncez vers le cockpit.
@@ -423,7 +427,51 @@ Votre mission s&#39;arrête ici.
 
 [[Continuer|Helico-Turbulences]]</tw-passagedata><tw-passagedata pid="23" name="Helico-Sieste" tags="" position="350,350" size="100,100">TODO
 
-[[Continuer|Helico-Turbulences]]</tw-passagedata><tw-passagedata pid="24" name="Helico-Alexandra-Start" tags="" position="475,350" size="100,100">TODO</tw-passagedata><tw-passagedata pid="25" name="Helico-Turbulences" tags="" position="600,350" size="100,100">TODO</tw-passagedata><tw-passagedata pid="26" name="StoryInit" tags="" position="725,350" size="100,100">&lt;&lt;cacheaudio &quot;background_main&quot; &quot;mp3|https://incompetech.com/music/royalty-free/mp3-royaltyfree/Almost%20in%20F.mp3&quot;&gt;&gt;
+[[Continuer|Helico-Turbulences]]</tw-passagedata><tw-passagedata pid="24" name="Helico-Turbulences" tags="" position="475,350" size="100,100">TODO</tw-passagedata><tw-passagedata pid="25" name="Helico-Alexandra-Start" tags="" position="600,350" size="100,100">Alors que l&#39;hélicoptère s&#39;éloigne petit à petit de l&#39;île de Nuku Hiva et progresse au-dessus de l&#39;océan, vous jeter un regard à la jeune femme civile. Elle esquisse un sourire crispé. Tout comme vous elle porte un casque d&#39;aviation, muni d&#39;une visière et d&#39;un micro. Avec le bruit des pales, difficile de s&#39;en passer pour communiquer.
+
+//Bonjour//, dites-vous. //Je suis Émile Fresnel. Je suis physicien. Et vous ?//
+
+//Alexandra//, répond-t-elle. //Alexandra Vallée. Je suis biologiste. C&#39;est la première fois que je vous vois. C&#39;est votre première mission ?//
+
+[[&#39;&quot;Oui&quot;&#39;|Helico-Alexandra-StartOui]]
+[[&quot;Non&quot; (mensonge)|Helico-Alexandra-StartNon]]</tw-passagedata><tw-passagedata pid="26" name="Helico-Alexandra-StartOui" tags="" position="725,350" size="100,100">Alexandra sourit.
+
+//C&#39;est ma cinquième//, dit-elle. //Vous verrez, c&#39;est assez surprenant ! Vous n&#39;avez pas perdu votre temps à attendre.//
+
+[[Vous lui posez des questions|Helico-Alexandra-Conversation]]
+[[Vous mettez fin à la conversation|Helico-Turbulences]]</tw-passagedata><tw-passagedata pid="27" name="Helico-Alexandra-StartNon" tags="" position="850,350" size="100,100">Alexandra fronce les sourcils, sceptique.
+
+//Vraiment ?// demande-t-elle. //C&#39;est ma cinquième mission et je suis certaine de ne vous avoir jamais vu.//
+
+[[&#39;&quot;En fait c&#39;est ma première mission.&quot;&#39;|Helico-Alexandra-StartNonOui]]
+[[Vous ignorez sa remarque et lui posez quelques questions|Helico-Alexandra-Conversation]]
+[[&#39;&quot;Achetez-vous des lunettes alors !&quot;&#39;|Helico-Alexandra-Lunettes]]</tw-passagedata><tw-passagedata pid="28" name="Helico-Alexandra-StartNonOui" tags="" position="975,350" size="100,100">TODO</tw-passagedata><tw-passagedata pid="29" name="Helico-Alexandra-Lunettes" tags="" position="1100,350" size="100,100">La jeune femme hausse les épaules et se détourne de vous pour regarder dehors. Votre conversation est terminée.
+
+[[Vous faites une sieste durant le trajet|Helico-Sieste]]
+[[Vous vous installez près de la porte latérale pour regarder dehors pendant le trajet|Helico-Fenêtre]]
+[[Vous attaquez le pilote pour prendre le contrôle de l&#39;appareil|Helico-AttaquePilote]]</tw-passagedata><tw-passagedata pid="30" name="Helico-Alexandra-Conversation" tags="" position="1225,350" size="100,100">* &lt;&lt;linkappend &quot;//Donc vous êtes biologiste ?//&quot;&gt;&gt;
+//Oui. Xénobiologiste, pour être exacte.//
+    &lt;&lt;linkappend &quot;AAA ?&quot;&gt;&gt;
+    BBB
+    &lt;&lt;/linkappend&gt;&gt;\
+&lt;&lt;/linkappend&gt;&gt;\
+
+* &lt;&lt;linkappend &quot;AAA ?&quot;&gt;&gt;
+BBB
+&lt;&lt;/linkappend&gt;&gt;\
+
+* &lt;&lt;linkappend &quot;AAA ?&quot;&gt;&gt;
+BBB
+&lt;&lt;/linkappend&gt;&gt;\
+
+* &lt;&lt;linkappend &quot;AAA ?&quot;&gt;&gt;
+BBB
+&lt;&lt;/linkappend&gt;&gt;\
+
+
+
+
+&lt;!-- FIN DE CONVERSATION : RETOUR DANS 02-voyage-helico.tw --&gt;</tw-passagedata><tw-passagedata pid="31" name="StoryInit" tags="" position="100,475" size="100,100">&lt;&lt;cacheaudio &quot;background_main&quot; &quot;mp3|https://incompetech.com/music/royalty-free/mp3-royaltyfree/Almost%20in%20F.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;helico_start&quot; &quot;mp3|https://www.soundjay.com/transportation/helicopter-starting-interior-01.mp3&quot;&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */

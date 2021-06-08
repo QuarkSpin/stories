@@ -10,3 +10,7 @@
 .macro-linkappend-insert {
     color: aquamarine;
 }
+
+.macro-linkappend:not(.link-internal) {
+    color: #eee;
+}
